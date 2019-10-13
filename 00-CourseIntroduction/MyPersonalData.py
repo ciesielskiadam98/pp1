@@ -1,4 +1,4 @@
-# drugi program
+#MyPersonalData
 
 name = "Adam"
 surname = "Ciesielski"
