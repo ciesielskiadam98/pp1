@@ -1,1 +1,0 @@
-print(boolean(2>5))
