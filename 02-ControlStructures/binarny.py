@@ -1,9 +1,14 @@
 liczba = int(input("Podaj liczbe: "))
 binarna = []
-x = liczba
-while liczba > 0:
+while liczba >= 1:
         binarna.append(liczba%2)
         liczba = liczba//2
-    
-print("{} = {}".format(x, binarna[-1*len(binarna):-1]))
+binarna.reverse()
+
+i = 0 #pomocnicza zmienna
+
+while i<len(binarna):
+    print(binarna[i], end="")
+    i += 1
+
     
