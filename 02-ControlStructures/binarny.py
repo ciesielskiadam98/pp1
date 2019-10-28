@@ -6,7 +6,6 @@ while liczba >= 1:
 binarna.reverse()
 
 i = 0 #pomocnicza zmienna
-
 while i<len(binarna):
     print(binarna[i], end="")
     i += 1
