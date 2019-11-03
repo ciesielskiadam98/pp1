@@ -4,7 +4,7 @@ with open('universities.txt', 'r') as file:
     name = re.findall('.*\n', file.read())
     for i in name:
         uni.append(i)
-        uni.sort()
+    uni.sort()
     file.close()
         
 with open('universities.txt', 'w') as file:
