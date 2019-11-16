@@ -1,9 +1,8 @@
-def silnia(n):
-     #0!=1 oraz 1!=1
-     if n==0 or n==1:
-         return 1
-    
-      #n! = n * (n-1)!
-     if n > 1:
-         return(n*silnia(n-1))
-print(f'5! = {silnia(2)}')
+n = int(input("Podaj liczbe: "))
+def suma(n):
+    if n == 1:
+        return 1
+    if n > 1:
+        return n + suma(n-1)
+
+print("Suma {} liczb: {}".format(n, suma(n)))
