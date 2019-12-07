@@ -1,3 +1,4 @@
+import statistics
 class Statystyka():
     def __init__(self, coll):
         self.coll = coll
@@ -19,13 +20,15 @@ class Statystyka():
         print(self.max1)
         print(self.min1)
         print(self.avgg)
-        
-    
-        
+        print(self.median1)
+    def median(self):
+        x = sorted(self.coll)
+        self.median1 = statistics.median(x)
         
 num1 = Statystyka([12, 37, 6, 9, 17])
 num1.maxx()
 num1.minn()
 num1.avg()
+num1.median()
 num1.display()
 
